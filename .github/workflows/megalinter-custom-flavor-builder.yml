@@ -113,6 +113,6 @@ jobs:
           dockerhub-repo: ${{ vars.DOCKERHUB_REPO }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_FLAVOR_BUILD_REPO: ${{ lower(github.repository) }}
+          CUSTOM_FLAVOR_BUILD_REPO: ${{ github.repository }}
           CUSTOM_FLAVOR_BUILD_REPO_URL: ${{ github.repositoryUrl }}
           CUSTOM_FLAVOR_BUILD_USER: ${{ github.actor }}
